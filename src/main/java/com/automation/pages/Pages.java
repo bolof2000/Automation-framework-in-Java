@@ -26,9 +26,9 @@ public class Pages {
     public static Properties config = new Properties();
     public static FileInputStream fis;
     public static Logger log = Logger.getLogger("");
-    //public static ExcelReader excel = new ExcelReader()
+    public static ExcelReader excel = new ExcelReader(System.getProperty("user.dir")+ "/src/main/resources/excel/testdata.xlsx");
     public static WebDriverWait wait;
-    //public ExtentReports rep = Ext
+    public ExtentReports rep = ExtentManager.getInstance();
     public static ExtentTest test;
     public static String browser;
 
